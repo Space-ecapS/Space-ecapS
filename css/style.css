@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+html ::-webkit-scrollbar {
+  background-color: #0e0e0e;
+  width: 0.25em;
+  margin: 1em;
+}
+
+html ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: #efefef;
+  border-radius: 0.25em;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: #8b8b8b;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  background: url("../static/Backgrounds/PC.jpg") no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+html body ::-moz-selection {
+  background-color: #6e6e6e;
+}
+
+html body ::selection {
+  background-color: #6e6e6e;
+}
+
+html body .Ecaps {
+  position: inherit;
+  width: 50%;
+  left: 0;
+  top: 0;
+}
+
+html body .Ecaps .Grouping_Ecaps {
+  background: url("../static/Backgrounds/Ecaps.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  color: #222222;
+}
+
+html body .Ecaps .Grouping_Ecaps .Ecaps_text {
+  width: 75%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+html body .Ecaps .Grouping_Ecaps .letter_spacing {
+  letter-spacing: 0.15em;
+}
+
+html body .Space {
+  position: fixed;
+  bottom: 0;
+  margin-left: 50%;
+  width: 50%;
+}
+
+html body .Space .Grouping_Space {
+  background: url("../static/Backgrounds/Space.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  color: #efefef;
+}
+
+html body .Space .Grouping_Space .Space_text {
+  width: 75%;
+  padding-left: 5%;
+  padding-right: 5%;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+html body .Space .Grouping_Space .letter_spacing {
+  letter-spacing: 0.15em;
+}
+
+html body .Empty_Space {
+  background: transparent;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html body .Basic_setup {
+  width: 100%;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+}
+
+html body .Basic_setup h1 {
+  width: 100px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  top: 50%;
+}
+
+html body .Basic_setup .Space_context {
+  width: 50%;
+}
+
+html body .Basic_setup .Ecaps_context {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  width: 50%;
+}
+
+html .Earth {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+html .Earth .Earth_source {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/*# sourceMappingURL=style.css.map */

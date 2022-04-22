@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+// Writing the CSS code here...
+html {
+  scroll-behavior: smooth;
+
+  // Scroll-bar Design (PC ONLY)
+  ::-webkit-scrollbar {
+    background-color: #0e0e0e;
+    width: 0.25em;
+    margin: 1em;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #efefef;
+    border-radius: 0.25em;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(139, 139, 139);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: url("../static/Backgrounds/PC.jpg") no-repeat center center
+      fixed;
+    background-size: cover;
+    overflow-x: hidden;
+
+    ::selection {
+      background-color: rgb(110, 110, 110);
+    }
+
+    .Ecaps {
+      position: inherit;
+      width: 50%;
+      left: 0;
+      top: 0;
+
+      .Grouping_Ecaps {
+        background: url("../static/Backgrounds/Ecaps.jpg") no-repeat center
+          center fixed;
+        background-size: cover;
+        color: #222222;
+
+        .Ecaps_text {
+          width: 75%;
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+
+        .letter_spacing {
+          letter-spacing: 0.15em;
+        }
+      }
+    }
+
+    .Space {
+      position: fixed;
+      bottom: 0;
+      margin-left: 50%;
+      width: 50%;
+
+      .Grouping_Space {
+        background: url("../static/Backgrounds/Space.jpg") no-repeat center
+          center fixed;
+        background-size: cover;
+
+        color: #efefef;
+
+        .Space_text {
+          width: 75%;
+          padding-left: 5%;
+          padding-right: 5%;
+          transform: rotate(-180deg);
+        }
+        .letter_spacing {
+          letter-spacing: 0.15em;
+        }
+      }
+    }
+
+    .Empty_Space {
+      background: transparent;
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .Basic_setup {
+      width: 100%;
+      background-color: transparent;
+      font-family: "Roboto", sans-serif;
+
+      h1 {
+        width: 100px;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        top: 50%;
+      }
+      .Space_context {
+        width: 50%;
+      }
+      .Ecaps_context {
+        transform: rotate(-180deg);
+        width: 50%;
+      }
+    }
+  }
+
+  .Earth {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .Earth_source {
+      padding: 0;
+      margin: 0;
+      width: 100vw;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
