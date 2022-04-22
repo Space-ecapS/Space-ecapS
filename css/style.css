@@ -25,7 +25,7 @@ html ::-webkit-scrollbar-thumb:hover {
 html body {
   margin: 0;
   padding: 0;
-  background: url("../static/Backgrounds/PC.jpg") no-repeat center center fixed;
+  background: url("https: //space-ecaps.github.io/portfolio/static/Backgrounds/PC.jpg") no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden;
 }
@@ -46,8 +46,7 @@ html body .Ecaps {
 }
 
 html body .Ecaps .Grouping_Ecaps {
-  background: url("../static/Backgrounds/Ecaps.jpg") no-repeat center center
-    fixed;
+  background: url("https: //space-ecaps.github.io/portfolio/static/Backgrounds/Ecaps.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #222222;
 }
@@ -70,8 +69,7 @@ html body .Space {
 }
 
 html body .Space .Grouping_Space {
-  background: url("../static/Backgrounds/Space.jpg") no-repeat center center
-    fixed;
+  background: url("https: //space-ecaps.github.io/portfolio/static/Backgrounds/Space.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #efefef;
 }
@@ -81,7 +79,7 @@ html body .Space .Grouping_Space .Space_text {
   padding-left: 5%;
   padding-right: 5%;
   -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 html body .Space .Grouping_Space .letter_spacing {
@@ -117,7 +115,7 @@ html body .Basic_setup .Space_context {
 
 html body .Basic_setup .Ecaps_context {
   -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
+          transform: rotate(-180deg);
   width: 50%;
 }
 
@@ -136,6 +134,6 @@ html .Earth .Earth_source {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 /*# sourceMappingURL=style.css.map */
