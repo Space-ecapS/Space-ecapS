@@ -9,3 +9,6 @@ window.addEventListener("resize", function (event) {
 $(window).on("scroll", function () {
   $(".Space").css("bottom", $(window).scrollTop() * -1);
 });
+ScrollOut({
+  targets: ".Earth_source",
+});
