@@ -68,13 +68,64 @@ html body .Ecaps .Grouping_Ecaps {
   color: #222222;
 }
 
+html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_1 {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_2 {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_3 {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_4 {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_5 {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_6 {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_7 {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_8 {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_9 {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
 html body .Ecaps .Grouping_Ecaps .Ecaps_text {
   width: 75%;
   padding-left: 5%;
   padding-right: 5%;
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
 }
 
 html body .Ecaps .Grouping_Ecaps .letter_spacing {
@@ -106,6 +157,18 @@ html body .Space .Grouping_Space .letter_spacing {
   letter-spacing: 0.15em;
 }
 
+html body .Space .Grouping_Space .Space_text_anime_1 {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+html body .Space .Grouping_Space .Ecaps_context {
+  width: 50%;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 html body .Empty_Space {
   background: transparent;
   width: 100%;
@@ -130,12 +193,6 @@ html body .Basic_setup h1 {
 }
 
 html body .Basic_setup .Space_context {
-  width: 50%;
-}
-
-html body .Basic_setup .Ecaps_context {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
   width: 50%;
 }
 

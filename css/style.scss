@@ -63,17 +63,68 @@ html {
         background-size: cover;
         color: #222222;
 
-        .Ecaps_text {
-          width: 75%;
-          padding-left: 5%;
-          padding-right: 5%;
+        .Ecaps_text_anime_1{
           opacity: 0;
           transform: translateX(-100px);
         }
 
+        .Ecaps_text_anime_2{
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        .Ecaps_text_anime_3{
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        .Ecaps_text_anime_4{
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        .Ecaps_text_anime_5{
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        .Ecaps_text_anime_6{
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        .Ecaps_text_anime_7{
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        .Ecaps_text_anime_8{
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        .Ecaps_text_anime_9{
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        
+
+        .Ecaps_text {
+          width: 75%;
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+        
+        // .Anime_setup{
+        //   transform: translateX(-100px);
+        //   opacity: 0;
+        // }
+
         .letter_spacing {
           letter-spacing: 0.15em;
         }
+        
       }
     }
 
@@ -87,8 +138,9 @@ html {
         background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/Space.jpg") no-repeat center
           center fixed;
         background-size: cover;
-
         color: #efefef;
+
+        
 
         .Space_text {
           width: 75%;
@@ -98,11 +150,22 @@ html {
         }
         .letter_spacing {
           letter-spacing: 0.15em;
-          opacity: 0;
         }
+        
+        .Space_text_anime_1 {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+
+        .Ecaps_context {
+          width: 50%;
+          transform: rotate(-180deg);
+        }
+
+        
       }
     }
-
+        
     .Empty_Space {
       background: transparent;
       width: 100%;
@@ -127,10 +190,7 @@ html {
       .Space_context {
         width: 50%;
       }
-      .Ecaps_context {
-        transform: rotate(-180deg);
-        width: 50%;
-      }
+      
     }
   }
 
