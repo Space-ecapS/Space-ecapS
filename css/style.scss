@@ -67,6 +67,8 @@ html {
           width: 75%;
           padding-left: 5%;
           padding-right: 5%;
+          opacity: 0;
+          transform: translateX(-100px);
         }
 
         .letter_spacing {
@@ -96,6 +98,7 @@ html {
         }
         .letter_spacing {
           letter-spacing: 0.15em;
+          opacity: 0;
         }
       }
     }

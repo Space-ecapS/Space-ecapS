@@ -12,3 +12,9 @@ $(window).on("scroll", function () {
 ScrollOut({
   targets: ".Earth_source",
 });
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to('#Ecaps_text_anime_1', {ScrollTrigger : "#Ecaps_text_anime_1", opacity: 1, duration: 3, x: 0,});
