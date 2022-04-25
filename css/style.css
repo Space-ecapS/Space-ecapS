@@ -22,7 +22,7 @@ html ::-webkit-scrollbar-thumb:hover {
   background: #8b8b8b;
 }
 
-html body {
+body {
   margin: 0;
   padding: 0;
   background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/PC.jpg") no-repeat center center fixed;
@@ -30,160 +30,35 @@ html body {
   overflow-x: hidden;
 }
 
-html body ::-moz-selection {
+body ::-moz-selection {
   background-color: #6e6e6e;
 }
 
-html body ::selection {
+body ::selection {
   background-color: #6e6e6e;
 }
 
-html body [data-scroll] {
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-html body [data-scroll="in"] {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-html body [data-scroll="out"] {
-  opacity: 0;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-}
-
-html body .Ecaps {
+.Ecaps {
   position: inherit;
   width: 50%;
   left: 0;
   top: 0;
 }
 
-html body .Ecaps .Grouping_Ecaps {
+.Ecaps .Grouping_Ecaps {
   background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/Ecaps.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #222222;
+  border: 5px solid  Red;
 }
 
-html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_1 {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-}
-
-html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_2 {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-}
-
-html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_3 {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-}
-
-html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_4 {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-}
-
-html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_5 {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-}
-
-html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_6 {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-}
-
-html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_7 {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-}
-
-html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_8 {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-}
-
-html body .Ecaps .Grouping_Ecaps .Ecaps_text_anime_9 {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-}
-
-html body .Ecaps .Grouping_Ecaps .Ecaps_text {
-  width: 75%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-html body .Ecaps .Grouping_Ecaps .letter_spacing {
-  letter-spacing: 0.15em;
-}
-
-html body .Space {
-  position: fixed;
-  bottom: 0;
-  margin-left: 50%;
-  width: 50%;
-}
-
-html body .Space .Grouping_Space {
-  background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/Space.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: #efefef;
-}
-
-html body .Space .Grouping_Space .Space_text {
-  width: 75%;
-  padding-left: 5%;
-  padding-right: 5%;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-
-html body .Space .Grouping_Space .letter_spacing {
-  letter-spacing: 0.15em;
-}
-
-html body .Space .Grouping_Space .Space_text_anime_1 {
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-}
-
-html body .Space .Grouping_Space .Ecaps_context {
-  width: 50%;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-
-html body .Empty_Space {
-  background: transparent;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-html body .Basic_setup {
+.Ecaps .Grouping_Ecaps .Basic_setup {
   width: 100%;
   background-color: transparent;
   font-family: "Roboto", sans-serif;
 }
 
-html body .Basic_setup h1 {
+.Ecaps .Grouping_Ecaps .Basic_setup h1 {
   width: 100px;
   position: relative;
   display: block;
@@ -192,11 +67,83 @@ html body .Basic_setup h1 {
   top: 50%;
 }
 
-html body .Basic_setup .Space_context {
+.Ecaps .Grouping_Ecaps .Basic_setup .Ecaps_text {
+  width: 75%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 5px solid green;
+}
+
+.Ecaps .Grouping_Ecaps .Basic_setup .Ecaps_context {
+  opacity: 1;
+  width: 75%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 5px solid green;
+}
+
+.Ecaps .Grouping_Ecaps .Basic_setup .letter_spacing {
+  letter-spacing: 0.15em;
+}
+
+.Space {
+  position: fixed;
+  bottom: 0;
+  margin-left: 50%;
   width: 50%;
 }
 
-html .Earth {
+.Space .Grouping_Space {
+  background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/Space.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #efefef;
+  border: 5px solid blue;
+}
+
+.Space .Grouping_Space .Basic_setup {
+  width: 100%;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Space .Grouping_Space .Basic_setup h1 {
+  width: 100px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  top: 50%;
+}
+
+.Space .Grouping_Space .Basic_setup .Space_text {
+  width: 75%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 5px solid yellow;
+}
+
+.Space .Grouping_Space .Basic_setup .Space_context {
+  width: 75%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 5px solid pink;
+}
+
+.Space .Grouping_Space .Basic_setup .letter_spacing {
+  letter-spacing: 0.15em;
+}
+
+.Empty_Space {
+  background: transparent;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.Earth {
   height: 100vh;
   width: 100vw;
   padding: 0;
@@ -204,13 +151,11 @@ html .Earth {
   position: relative;
 }
 
-html .Earth .Earth_source {
+.Earth .Earth_source {
   padding: 0;
   margin: 0;
   width: 100vw;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 /*# sourceMappingURL=style.css.map */

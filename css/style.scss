@@ -1,6 +1,9 @@
+// Imported Fonts
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
-// Writing the CSS code here...
+//SCSS Code 
+
+// HTML Style
 html {
   scroll-behavior: smooth;
 
@@ -24,161 +27,41 @@ html {
     background: rgb(139, 139, 139);
   }
 
-  body {
-    margin: 0;
-    padding: 0;
-    background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/PC.jpg") no-repeat center center
-      fixed;
+ 
+
+}
+
+// Body Style
+body {
+  margin: 0;
+  padding: 0;
+  background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/PC.jpg") no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+
+  ::selection {
+    background-color: rgb(110, 110, 110);
+  }
+}
+
+// Ecaps Style
+.Ecaps {
+  position: inherit;
+  width: 50%;
+  left: 0;
+  top: 0;
+
+  .Grouping_Ecaps {
+    background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/Ecaps.jpg") no-repeat center center fixed;
     background-size: cover;
-    overflow-x: hidden;
-
-    ::selection {
-      background-color: rgb(110, 110, 110);
-    }
-
-    [data-scroll] {
-      transition: all .5s;
-    }
-    
-    [data-scroll="in"] {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    [data-scroll="out"] {
-      opacity: 0;
-      transform: translateY(-100px);
-    }
-
-
-    .Ecaps {
-      position: inherit;
-      width: 50%;
-      left: 0;
-      top: 0;
-
-      .Grouping_Ecaps {
-        background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/Ecaps.jpg") no-repeat center
-          center fixed;
-        background-size: cover;
-        color: #222222;
-
-        .Ecaps_text_anime_1{
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-
-        .Ecaps_text_anime_2{
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-
-        .Ecaps_text_anime_3{
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-
-        .Ecaps_text_anime_4{
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-
-        .Ecaps_text_anime_5{
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-
-        .Ecaps_text_anime_6{
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-
-        .Ecaps_text_anime_7{
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-
-        .Ecaps_text_anime_8{
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-
-        .Ecaps_text_anime_9{
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-
-        
-
-        .Ecaps_text {
-          width: 75%;
-          padding-left: 5%;
-          padding-right: 5%;
-        }
-        
-        // .Anime_setup{
-        //   transform: translateX(-100px);
-        //   opacity: 0;
-        // }
-
-        .letter_spacing {
-          letter-spacing: 0.15em;
-        }
-        
-      }
-    }
-
-    .Space {
-      position: fixed;
-      bottom: 0;
-      margin-left: 50%;
-      width: 50%;
-
-      .Grouping_Space {
-        background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/Space.jpg") no-repeat center
-          center fixed;
-        background-size: cover;
-        color: #efefef;
-
-        
-
-        .Space_text {
-          width: 75%;
-          padding-left: 5%;
-          padding-right: 5%;
-          transform: rotate(-180deg);
-        }
-        .letter_spacing {
-          letter-spacing: 0.15em;
-        }
-        
-        .Space_text_anime_1 {
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-
-        .Ecaps_context {
-          width: 50%;
-          transform: rotate(-180deg);
-        }
-
-        
-      }
-    }
-        
-    .Empty_Space {
-      background: transparent;
-      width: 100%;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
+    color: #222222;
+    border: 5px solid  Red;
 
     .Basic_setup {
       width: 100%;
       background-color: transparent;
       font-family: "Roboto", sans-serif;
-
+    
       h1 {
         width: 100px;
         position: relative;
@@ -187,27 +70,110 @@ html {
         text-align: center;
         top: 50%;
       }
-      .Space_context {
-        width: 50%;
-      }
       
-    }
+      .Ecaps_text {
+        width: 75%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border: 5px solid green;
+      }
+
+      .Ecaps_context {
+        opacity: 1;
+        width: 75%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border: 5px solid green;
+      }
+
+      .letter_spacing {
+        letter-spacing: 0.15em;
+      }
+
+    }    
+
   }
 
-  .Earth {
-    height: 100vh;
-    width: 100vw;
+}
+
+// Space Style
+.Space {
+  position: fixed;
+  bottom: 0;
+  margin-left: 50%;
+  width: 50%;
+
+  .Grouping_Space {
+    background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/Space.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #efefef;
+    border: 5px solid blue;
+
+    .Basic_setup {
+      width: 100%;
+      background-color: transparent;
+      font-family: "Roboto", sans-serif;
+      transform: rotate(180deg);
+    
+      h1 {
+        width: 100px;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        top: 50%;
+        
+      }
+      
+      .Space_text {
+        width: 75%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border: 5px solid yellow;
+      }
+
+      .Space_context {
+        width: 75%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border: 5px solid pink;
+      }
+      
+      .letter_spacing {
+        letter-spacing: 0.15em;
+      }
+
+    }
+
+  }
+
+}
+
+// Empty Space Style
+.Empty_Space {
+  background: transparent;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+// Earth Style
+.Earth {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .Earth_source {
     padding: 0;
     margin: 0;
-    position: relative;
-
-    .Earth_source {
-      padding: 0;
-      margin: 0;
-      width: 100vw;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    width: 100vw;
+    position: absolute;
+    top: 50%;
   }
 }
