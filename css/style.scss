@@ -56,42 +56,7 @@ body {
     background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/Ecaps.jpg") no-repeat center center fixed;
     background-size: cover;
     color: #222222;
-    border: 5px solid  Red;
 
-    .E_anime_1{
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-
-    .E_anime_2{
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-
-    .E_anime_3{
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-
-    .E_anime_4{
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-
-    .E_anime_5{
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-
-    .E_anime_6{
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-
-    .E_anime_7{
-      opacity: 0;
-      transform: translateX(-100px);
-    }
 
     .Basic_setup {
       width: 100%;
@@ -145,10 +110,7 @@ body {
   .Grouping_Space {
     background: url("https://space-ecaps.github.io/portfolio/static/Backgrounds/Space.jpg") no-repeat center center fixed;
     background-size: cover;
-    color: #efefef;
-    border: 5px solid blue;
-
-    
+    color: #efefef;   
 
     .Basic_setup {
       width: 100%;
@@ -164,15 +126,7 @@ body {
         text-align: center;
         top: 50%;
         
-      }
-
-      .S_anime_1 {
-        opacity: .25;
-        transform: translateX(-100px);
-        border: 1px solid green;
-      }
-      
-
+      }  
 
       .Space_text {
         width: 75%;
@@ -227,5 +181,6 @@ body {
     width: 100vw;
     position: absolute;
     top: 50%;
+    transform: translateX(2px);
   }
 }

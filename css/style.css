@@ -157,6 +157,13 @@ body ::selection {
   top: 50%;
 }
 
+.Space .Grouping_Space .Basic_setup .S_anime_1 {
+  opacity: .25;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  border: 1px solid green;
+}
+
 .Space .Grouping_Space .Basic_setup .Space_text {
   width: 75%;
   padding-left: 5%;
@@ -196,5 +203,7 @@ body ::selection {
   width: 100vw;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
 }
 /*# sourceMappingURL=style.css.map */
