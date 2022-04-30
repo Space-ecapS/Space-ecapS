@@ -11,6 +11,6 @@ $(window).on("scroll", function () {
 });
 
 
-gsap.regsingePlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('.Earth_source ')
+gsap.to('.Earth_source', {scrollTrigger: {trigger: '.Earth_source', toggleActions: "restart none none none"}, duration: 1, delay: 0.25, opacity: 1});
