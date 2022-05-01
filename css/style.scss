@@ -182,3 +182,14 @@ body {
     opacity: .0;
   }
 }
+
+
+// Social Style
+.Social{
+  border: 1px solid green;
+  transform: translateY(50vh);
+  height: calc(2.5vh + 2.5vw);
+  width: 100vw;
+  background: url('../static/Backgrounds/Social.jpg');
+  background-size: 100% 100%;
+}
