@@ -1,3 +1,6 @@
+
+
+
 var winHeight = $(window).innerHeight();
 $(document).ready(function () {
   $(".Basic_setup").height(winHeight);
@@ -11,6 +14,8 @@ $(window).on("scroll", function () {
 });
 
 
-gsap.registerPlugin(ScrollTrigger);
+var tle = gsap.timeline({repeat: -1, yoyo: true});
+var tls = gsap.timeline({repeat: -1, yoyo: true});
 
-gsap.to('.Earth_source', {scrollTrigger: {trigger: '.Earth_source', toggleActions: "restart none none none"}, duration: 1, delay: 0.25, opacity: 1});
+tle.fromTo('.Ecaps_Astronaut', {y:50}, {duration: 1, y: -100, ease: "power1.inOut"});
+tls.fromTo('.Space_Astronaut', {y: 50}, {duration: 1, y: -100, ease: "power1.inOut"});
