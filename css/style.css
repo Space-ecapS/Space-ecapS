@@ -46,7 +46,8 @@ body ::selection {
 }
 
 .Ecaps .Grouping_Ecaps {
-  background: url(../static/Backgrounds/Space.webp) no-repeat center center fixed;
+  background: url(../static/Backgrounds/Space.webp) no-repeat center center
+    fixed;
   background-size: cover;
   color: #efefef;
 }
@@ -54,7 +55,7 @@ body ::selection {
 .Ecaps .Grouping_Ecaps .Basic_setup {
   width: 100%;
   background-color: transparent;
-  font-family: 'Zen Loop', cursive;
+  font-family: "Zen Loop", cursive;
 }
 
 .Ecaps .Grouping_Ecaps .Basic_setup h1 {
@@ -90,11 +91,11 @@ body ::selection {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Ecaps .Grouping_Ecaps .Basic_setup .Ecaps_moon .Ecaps_Astronaut {
@@ -110,7 +111,8 @@ body ::selection {
 }
 
 .Space .Grouping_Space {
-  background: url(../static/Backgrounds/Ecaps.webp) no-repeat center center fixed;
+  background: url(../static/Backgrounds/Ecaps.webp) no-repeat center center
+    fixed;
   background-size: cover;
   color: #222222;
 }
@@ -118,9 +120,9 @@ body ::selection {
 .Space .Grouping_Space .Basic_setup {
   width: 100%;
   background-color: transparent;
-  font-family: 'Zen Loop', cursive;
+  font-family: "Zen Loop", cursive;
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .Space .Grouping_Space .Basic_setup h1 {
@@ -155,11 +157,11 @@ body ::selection {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Space .Grouping_Space .Basic_setup .Space_moon .Space_Astronaut {
@@ -179,7 +181,7 @@ body ::selection {
   border: 1px solid transparent;
   border-radius: 2.5vw 2.5vw 0px 0px;
   -webkit-transform: translateY(100vh);
-          transform: translateY(100vh);
+  transform: translateY(100vh);
   color: white;
   height: calc(4vh + 4vw);
   width: 100%;
@@ -188,9 +190,9 @@ body ::selection {
   background: rgba(105, 105, 105, 0.75);
   opacity: 0.7;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-backdrop-filter: blur(5000px);
-          backdrop-filter: blur(5000px);
+  backdrop-filter: blur(5000px);
 }
 
 .Social .Social_part_1 {
@@ -200,8 +202,8 @@ body ::selection {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   vertical-align: middle;
   margin: 0;
   padding: 0;
