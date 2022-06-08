@@ -1,5 +1,5 @@
 // Imported Fonts
-@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
 //SCSS Code 
 // HTML Style
 html {
@@ -44,10 +44,11 @@ body {
         background: url(../static/Backgrounds/Space.webp) no-repeat center center fixed;
         background-size: cover;
         color: #efefef;
+        font-size: calc(.85vh + .85vw);
         .Basic_setup {
             width: 100%;
             background-color: transparent;
-            font-family: 'Zen Loop', cursive;
+            font-family: 'Libre Barcode 128 Text', cursive;
             h1 {
                 width: 100px;
                 position: relative;
@@ -98,7 +99,8 @@ body {
         .Basic_setup {
             width: 100%;
             background-color: transparent;
-            font-family: 'Zen Loop', cursive;
+            font-family: 'Libre Barcode 128 Text', cursive;
+            font-size: calc(.85vh + .85vw);
             transform: rotate(180deg);
             h1 {
                 width: 100px;
