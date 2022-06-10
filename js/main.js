@@ -1,4 +1,5 @@
 if (window.screen.width > 600) {
+
   var winHeight = $(window).innerHeight();
   $(document).ready(function () {
     $(".Basic_setup").height(winHeight);
@@ -10,6 +11,7 @@ if (window.screen.width > 600) {
   $(window).on("scroll", function () {
     $(".Space").css("bottom", $(window).scrollTop() * -1);
   });
+
   var tle = gsap.timeline({ repeat: -1, yoyo: true });
   var tls = gsap.timeline({ repeat: -1, yoyo: true });
   tle.fromTo(
@@ -22,4 +24,9 @@ if (window.screen.width > 600) {
     { y: 50 },
     { duration: 1, y: -100, ease: "power1.inOut" }
   );
+
+}
+else {
+  gsap.fromTo('.g_heading', {y: 25, opacity: 0}, {duration: 1.75, y: 0, opacity: 1, ease: "power1.inOut"});
+  gsap.fromTo('.g_subheading', { opacity: .01, y: 15, }, { delay: .5, duration: 1.5, opacity: 1, y: 0, ease: "power1.inOut"});
 }

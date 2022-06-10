@@ -49,13 +49,13 @@ body ::selection {
   background: url(../static/Backgrounds/Space.webp) no-repeat center center fixed;
   background-size: cover;
   color: #efefef;
-  font-size: calc(.85vh + .85vw);
+  font-size: calc(0.85vh + 0.85vw);
 }
 
 .Ecaps .Grouping_Ecaps .Basic_setup {
   width: 100%;
   background-color: transparent;
-  font-family: 'Libre Barcode 128 Text', cursive;
+  font-family: "Libre Barcode 128 Text", cursive;
 }
 
 .Ecaps .Grouping_Ecaps .Basic_setup h1 {
@@ -82,6 +82,7 @@ body ::selection {
 
 .Ecaps .Grouping_Ecaps .Basic_setup .letter_spacing {
   letter-spacing: 0.15em;
+  line-height: 125%;
 }
 
 .Ecaps .Grouping_Ecaps .Basic_setup .Ecaps_moon {
@@ -119,8 +120,8 @@ body ::selection {
 .Space .Grouping_Space .Basic_setup {
   width: 100%;
   background-color: transparent;
-  font-family: 'Libre Barcode 128 Text', cursive;
-  font-size: calc(.85vh + .85vw);
+  font-family: "Libre Barcode 128 Text", cursive;
+  font-size: calc(0.85vh + 0.85vw);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -148,6 +149,7 @@ body ::selection {
 
 .Space .Grouping_Space .Basic_setup .letter_spacing {
   letter-spacing: 0.15em;
+  line-height: 125%;
 }
 
 .Space .Grouping_Space .Basic_setup .Space_moon {
@@ -222,57 +224,45 @@ body ::selection {
 }
 
 @media screen and (max-width: 800px) {
-  .Space {
+  body {
+    background: url(../static/Backgrounds/mobile-bg.webp) no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Libre Barcode 128 Text", cursive;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  body .Space {
     display: none;
     bottom: 0px;
     width: 0%;
     height: 0%;
   }
-  .Ecaps {
+  body .Ecaps {
     display: none;
     width: 0%;
     height: 0%;
   }
-  .Empty_Space {
+  body .Empty_Space {
     display: none;
     width: 0%;
     height: 0%;
   }
-  body {
-    background: url(../static/Backgrounds/mobile-bg.webp) no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Libre Barcode 128 Text', cursive;
-    color: white;
-    margin: 0;
-    padding: 0;
-  }
-  .mobile {
-    height: 100vh;
-    width: 99.5vw;
+  body .mobile {
+    border: 1px solid green;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
   }
-  .Social {
-    margin-top: 10px;
-    height: calc(4vh + 4vw);
-  }
-  .Social_part_1 {
-    height: calc(4vh + 4vw);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .bi {
-    size: 150%;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .page_1 {
+  body .mobile .page_1 {
     padding: 35% 0%;
   }
-  .letter_spacing {
-    letter-spacing: 0.15em;
-  }
-  .m_title {
+  body .mobile .page_1 .m_title {
     font-size: calc(2.5vh + 2.5vw);
     text-align: center;
     width: 95%;
@@ -281,8 +271,48 @@ body ::selection {
     height: min-content;
     margin: 25% auto;
   }
-  .m_heading {
+  body .mobile .page_1 .m_heading {
     font-size: calc(6vh + 6vw);
+  }
+  body .mobile .letter_spacing {
+    letter-spacing: 0.15em;
+    line-height: 125%;
+  }
+  body .mobile .page_last {
+    height: 100vh;
+  }
+  body .mobile .page_last .error {
+    font-size: calc(6vh + 6vw);
+    text-align: center;
+    width: 100%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    color: #ff6767;
+    margin-top: 65%;
+  }
+  body .mobile .page_last .enter_p {
+    font-size: calc(2.75vh + 2.75vw);
+    text-align: center;
+    width: 95%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: 20% auto;
+  }
+  body .Social {
+    display: none;
+  }
+  body .Social .Social_part_1 {
+    height: calc(4vh + 4vw);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .Social .Social_part_1 .bi {
+    size: 150%;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
