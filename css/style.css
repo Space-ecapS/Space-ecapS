@@ -249,7 +249,6 @@ body ::selection {
     height: 0%;
   }
   body .mobile {
-    border: 1px solid green;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -258,6 +257,10 @@ body ::selection {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
+  }
+  body .mobile .letter_spacing {
+    letter-spacing: 0.15em;
+    line-height: 125%;
   }
   body .mobile .page_1 {
     padding: 35% 0%;
@@ -274,9 +277,18 @@ body ::selection {
   body .mobile .page_1 .m_heading {
     font-size: calc(6vh + 6vw);
   }
-  body .mobile .letter_spacing {
-    letter-spacing: 0.15em;
-    line-height: 125%;
+  body .mobile .page_2 {
+    padding: 35% auto;
+    height: 75vh;
+  }
+  body .mobile .page_2 .m_intro {
+    font-size: calc(2.5vh + 2.5vw);
+    text-align: center;
+    width: 95%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: 70% auto;
   }
   body .mobile .page_last {
     height: 100vh;
