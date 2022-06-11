@@ -288,7 +288,20 @@ body ::selection {
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
-    margin: 70% auto;
+    margin: 45% auto;
+  }
+  body .mobile .page_3 {
+    padding: 35% auto;
+    height: 75vh;
+  }
+  body .mobile .page_3 .m_intro {
+    font-size: calc(2.5vh + 2.5vw);
+    text-align: center;
+    width: 95%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: 40% auto;
   }
   body .mobile .page_last {
     height: 100vh;

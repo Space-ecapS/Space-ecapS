@@ -273,8 +273,19 @@ body {
           text-align: center;
           width: 95%;
           height: min-content;
-          margin: 70% auto;
-          // border: green solid 1px;
+          margin: 45% auto;
+        }
+      }
+
+      .page_3{
+        padding: 35% auto;
+        height: 75vh;
+        .m_intro{
+          font-size: calc(2.5vh + 2.5vw);
+          text-align: center;
+          width: 95%;
+          height: min-content;
+          margin: 40% auto;
         }
       }
 
