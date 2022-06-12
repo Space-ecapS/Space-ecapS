@@ -289,11 +289,9 @@ body ::selection {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 1px solid green;
   }
   body .mobile .moon .Ecaps_Astronaut {
     width: 75vw;
-    border: 1px solid red;
   }
   body .mobile .page_2 {
     padding: 35% auto;
@@ -307,6 +305,9 @@ body ::selection {
     height: -moz-min-content;
     height: min-content;
     margin: 70% auto;
+    opacity: .01;
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
   }
   body .mobile .page_3 {
     padding: 35% auto;

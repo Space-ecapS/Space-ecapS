@@ -271,11 +271,8 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid green;
         .Ecaps_Astronaut{
           width: 75vw;
-          border: 1px solid red;
-          
         }
       }
 
@@ -288,6 +285,8 @@ body {
           width: 95%;
           height: min-content;
           margin: 70% auto;
+          opacity: .01; 
+          transform: translateY(15px);
         }
       }
 
