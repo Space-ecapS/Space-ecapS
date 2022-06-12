@@ -277,6 +277,24 @@ body ::selection {
   body .mobile .page_1 .m_heading {
     font-size: calc(6vh + 6vw);
   }
+  body .mobile .moon {
+    padding: 35% auto;
+    height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid green;
+  }
+  body .mobile .moon .Ecaps_Astronaut {
+    width: 75vw;
+    border: 1px solid red;
+  }
   body .mobile .page_2 {
     padding: 35% auto;
     height: 70vh;
@@ -365,7 +383,7 @@ body ::selection {
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
-    color: #ff6767;
+    color: #ffafaf;
     margin-top: 65%;
   }
   body .mobile .page_last .enter_p {

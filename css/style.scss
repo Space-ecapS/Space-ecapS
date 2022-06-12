@@ -265,6 +265,20 @@ body {
         }
       }
 
+      .moon{
+        padding: 35% auto;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid green;
+        .Ecaps_Astronaut{
+          width: 75vw;
+          border: 1px solid red;
+          
+        }
+      }
+
       .page_2{
         padding: 35% auto;
         height: 70vh;
@@ -345,7 +359,7 @@ body {
           text-align: center;
           width: 100%;
           height: min-content;
-          color: rgb(255, 103, 103);
+          color: rgb(255, 175, 175);
           margin-top: 65%;
         }
 
