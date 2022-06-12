@@ -1,5 +1,4 @@
 if (window.screen.width > 600) {
-
   var winHeight = $(window).innerHeight();
   $(document).ready(function () {
     $(".Basic_setup").height(winHeight);
@@ -24,9 +23,7 @@ if (window.screen.width > 600) {
     { y: 50 },
     { duration: 1, y: -100, ease: "power1.inOut" }
   );
-
-}
-else {
+} else {
   gsap.registerPlugin(ScrollTrigger);
   var tle = gsap.timeline({ repeat: -1, yoyo: true });
   tle.fromTo(
@@ -34,7 +31,20 @@ else {
     { y: 50 },
     { duration: 1, y: -100, ease: "power1.inOut" }
   );
-  gsap.fromTo('.g_heading', {y: 25, opacity: 0}, {duration: 1.75, y: 0, opacity: 1, ease: "power1.inOut"});
-  gsap.fromTo('.g_subheading', { opacity: .01, y: 15, }, { delay: .5, duration: 1.5, opacity: 1, y: 0, ease: "power1.inOut"});
-  gsap.to('.hey', { scrollTrigger: {trigger: '.hey', toggleActions: 'restart none none none'}, delay: .5, duration: 1.5, opacity: 1, y: 0, ease: "power1.inOut" });
+  gsap.fromTo(
+    ".g_heading",
+    { y: 25, opacity: 0, },
+    { duration: 1.75, y: 0, opacity: 1, ease: "power1.inOut", }
+  );
+  gsap.fromTo(
+    ".g_subheading",
+    { opacity: 0.01, y: 15 },
+    { delay: 0.5, duration: 1.5, opacity: 1, y: 0, ease: "power1.inOut" }
+  );
+  gsap.fromTo(".hey", { opacity: 0.01, y: 15 }, {
+    scrollTrigger: { trigger: ".hey", toggleActions: "restart none none none" },
+    duration: 1.5,
+    opacity: 1,
+    y: 0,
+  });
 }
