@@ -58,6 +58,7 @@ body {
       width: 100%;
       background-color: transparent;
       font-family: "Libre Barcode 128 Text", cursive;
+      opacity: 65%;
 
       h1 {
         width: 100px;
@@ -121,6 +122,7 @@ body {
       font-family: "Libre Barcode 128 Text", cursive;
       font-size: calc(0.85vh + 0.85vw);
       transform: rotate(180deg);
+      opacity: 60%;
 
       h1 {
         width: 100px;
@@ -268,6 +270,7 @@ body {
           width: 95%;
           height: min-content;
           margin: 25% auto;
+          opacity: 60%;
           // border: green solid 1px;
         }
 
@@ -284,6 +287,7 @@ body {
         justify-content: center;
         .Ecaps_Astronaut {
           width: 75vw;
+          opacity: 75%;
         }
       }
 
@@ -296,8 +300,7 @@ body {
           width: 95%;
           height: min-content;
           margin: 70% auto;
-          opacity: 0.01;
-          transform: translateY(15px);
+          opacity: 60%;
         }
       }
 
@@ -310,6 +313,7 @@ body {
           width: 95%;
           height: min-content;
           margin: 70% auto;
+          opacity: 60%;
         }
       }
 
@@ -322,6 +326,7 @@ body {
           width: 95%;
           height: min-content;
           margin: 70% auto;
+          opacity: 60%;
         }
       }
 
@@ -334,6 +339,7 @@ body {
           width: 95%;
           height: min-content;
           margin: 70% auto;
+          opacity: 60%;
         }
       }
 
@@ -346,6 +352,7 @@ body {
           width: 95%;
           height: min-content;
           margin: 70% auto;
+          opacity: 60%;
         }
       }
 
@@ -358,6 +365,7 @@ body {
           width: 95%;
           height: min-content;
           margin: 70% auto;
+          opacity: 60%;
         }
       }
 
@@ -371,6 +379,7 @@ body {
           height: min-content;
           color: rgb(255, 175, 175);
           margin-top: 65%;
+          opacity: 60%;
         }
 
         .enter_p {
@@ -379,6 +388,7 @@ body {
           width: 95%;
           height: min-content;
           margin: 20% auto;
+          opacity: 60%;
         }
       }
     }
