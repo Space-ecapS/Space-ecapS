@@ -45,6 +45,46 @@ body ::selection {
   top: 0;
 }
 
+.Ecaps .Social {
+  position: absolute;
+  width: 50%;
+  -webkit-transform: translateY(-2.1vh);
+          transform: translateY(-2.1vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Ecaps .Social .arrange {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Ecaps .Social .arrange .bi {
+  color: #efefef;
+  opacity: 70%;
+}
+
+.Ecaps .Copy_right {
+  width: 100%;
+  border: 1px solid transparent;
+  font-family: "Libre Barcode 128 Text", cursive;
+  opacity: 65%;
+  text-align: center;
+  color: #efefef;
+  letter-spacing: 0.15em;
+  line-height: 125%;
+}
+
 .Ecaps .Grouping_Ecaps {
   background: url(../static/Backgrounds/Space.webp) no-repeat center center fixed;
   background-size: cover;
@@ -112,6 +152,45 @@ body ::selection {
   width: 50%;
 }
 
+.Space .Copy_right {
+  width: 100%;
+  border: 1px solid transparent;
+  font-family: "Libre Barcode 128 Text", cursive;
+  opacity: 65%;
+  text-align: center;
+  color: #0e0e0e;
+  letter-spacing: 0.15em;
+  line-height: 125%;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  margin-bottom: -1vh;
+}
+
+.Space .Social {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Space .Social .arrange {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Space .Social .arrange .bi {
+  color: #0e0e0e;
+  opacity: 70%;
+}
+
 .Space .Grouping_Space {
   background: url(../static/Backgrounds/Ecaps.webp) no-repeat center center fixed;
   background-size: cover;
@@ -125,7 +204,7 @@ body ::selection {
   font-size: calc(0.85vh + 0.85vw);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  opacity: 60%;
+  opacity: 70%;
 }
 
 .Space .Grouping_Space .Basic_setup h1 {
@@ -173,60 +252,24 @@ body ::selection {
   vertical-align: middle;
 }
 
+.mobile {
+  display: none;
+}
+
+.mobile .letter_spacing {
+  display: none;
+}
+
+.mobile .Ecaps_Astronaut {
+  display: none;
+}
+
 .Empty_Space {
   background: transparent;
   width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
-}
-
-.Social {
-  border: 1px solid transparent;
-  border-radius: 2.5vw 2.5vw 0px 0px;
-  -webkit-transform: translateY(100vh);
-          transform: translateY(100vh);
-  color: white;
-  height: calc(4vh + 4vw);
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background: rgba(105, 105, 105, 0.75);
-  opacity: 0.7;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-backdrop-filter: blur(5000px);
-          backdrop-filter: blur(5000px);
-}
-
-.Social .Social_part_1 {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  vertical-align: middle;
-  margin: 0;
-  padding: 0;
-}
-
-.Social .Social_part_1 a {
-  color: white;
-  margin-left: 1%;
-  padding-top: 2.5%;
-  margin-right: 1%;
-  font: calc(2vh + 2vw);
-}
-
-.Social .Social_part_1 a:after {
-  color: white;
-}
-
-.mobile * {
-  opacity: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -255,6 +298,7 @@ body ::selection {
     height: 0%;
   }
   body .mobile {
+    display: block;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -270,6 +314,7 @@ body ::selection {
   body .mobile .letter_spacing {
     letter-spacing: 0.15em;
     line-height: 125%;
+    display: block;
   }
   body .mobile .page_1 {
     padding: 35% 0%;
@@ -282,7 +327,7 @@ body ::selection {
     height: -moz-min-content;
     height: min-content;
     margin: 25% auto;
-    opacity: 60%;
+    opacity: 70%;
   }
   body .mobile .page_1 .m_heading {
     font-size: calc(6vh + 6vw);
@@ -301,6 +346,7 @@ body ::selection {
             justify-content: center;
   }
   body .mobile .moon .Ecaps_Astronaut {
+    display: block;
     width: 75vw;
     opacity: 75%;
   }
@@ -316,7 +362,7 @@ body ::selection {
     height: -moz-min-content;
     height: min-content;
     margin: 70% auto;
-    opacity: 60%;
+    opacity: 70%;
   }
   body .mobile .page_3 {
     padding: 35% auto;
@@ -330,7 +376,7 @@ body ::selection {
     height: -moz-min-content;
     height: min-content;
     margin: 70% auto;
-    opacity: 60%;
+    opacity: 70%;
   }
   body .mobile .page_4 {
     padding: 70% auto;
@@ -344,7 +390,7 @@ body ::selection {
     height: -moz-min-content;
     height: min-content;
     margin: 70% auto;
-    opacity: 60%;
+    opacity: 70%;
   }
   body .mobile .page_5 {
     padding: 35% auto;
@@ -358,7 +404,7 @@ body ::selection {
     height: -moz-min-content;
     height: min-content;
     margin: 70% auto;
-    opacity: 60%;
+    opacity: 70%;
   }
   body .mobile .page_6 {
     padding: 35% auto;
@@ -372,7 +418,7 @@ body ::selection {
     height: -moz-min-content;
     height: min-content;
     margin: 70% auto;
-    opacity: 60%;
+    opacity: 70%;
   }
   body .mobile .page_7 {
     padding: 35% auto;
@@ -386,7 +432,7 @@ body ::selection {
     height: -moz-min-content;
     height: min-content;
     margin: 70% auto;
-    opacity: 60%;
+    opacity: 70%;
   }
   body .mobile .page_last {
     height: 100vh;
@@ -400,7 +446,7 @@ body ::selection {
     height: min-content;
     color: #ffafaf;
     margin-top: 65%;
-    opacity: 60%;
+    opacity: 70%;
   }
   body .mobile .page_last .enter_p {
     font-size: calc(2.75vh + 2.75vw);
@@ -410,21 +456,7 @@ body ::selection {
     height: -moz-min-content;
     height: min-content;
     margin: 20% auto;
-    opacity: 60%;
-  }
-  body .Social {
-    display: none;
-  }
-  body .Social .Social_part_1 {
-    height: calc(4vh + 4vw);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body .Social .Social_part_1 .bi {
-    size: 150%;
-    padding-left: 5px;
-    padding-right: 5px;
+    opacity: 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */
