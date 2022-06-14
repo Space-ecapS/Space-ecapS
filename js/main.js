@@ -16,12 +16,12 @@ if (window.screen.width > 600) {
   tle.fromTo(
     ".Ecaps_Astronaut",
     { y: 50 },
-    { duration: 1, y: -100, ease: "power1.inOut" }
+    { duration: 2.5, y: -100, ease: "power1.inOut" }
   );
   tls.fromTo(
     ".Space_Astronaut",
     { y: 50 },
-    { duration: 1, y: -100, ease: "power1.inOut" }
+    { duration: 2.5, y: -100, ease: "power1.inOut" }
   );
 } else {
   gsap.registerPlugin(ScrollTrigger);
@@ -29,7 +29,7 @@ if (window.screen.width > 600) {
   tle.fromTo(
     ".Ecaps_Astronaut",
     { y: 50 },
-    { duration: 1, y: -100, ease: "power1.inOut" }
+    { duration: 2.5, y: -100, ease: "power1.inOut" }
   );
   gsap.fromTo(
     ".g_heading",
@@ -41,10 +41,4 @@ if (window.screen.width > 600) {
     { opacity: 0.01, y: 15 },
     { delay: 0.5, duration: 1.5, opacity: 1, y: 0, ease: "power1.inOut" }
   );
-  gsap.fromTo(".hey", { opacity: 0.01, y: 15 }, {
-    scrollTrigger: { trigger: ".hey", toggleActions: "restart none none none" },
-    duration: 1.5,
-    opacity: 1,
-    y: 0,
-  });
 }
