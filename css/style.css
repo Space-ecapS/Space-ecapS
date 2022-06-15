@@ -85,6 +85,147 @@ body ::selection {
   line-height: 125%;
 }
 
+.Ecaps .glitch_social {
+  font-size: 1.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #efefef;
+  font-family: "Libre Barcode 128 Text", cursive;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+  -webkit-animation: glitch 300ms infinite;
+          animation: glitch 300ms infinite;
+}
+
+.Ecaps .glitch_social span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Ecaps .glitch span:first-child {
+  -webkit-animation: glitch 600ms infinite;
+          animation: glitch 600ms infinite;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+  -webkit-transform: translate(-0.025em, -1em);
+          transform: translate(-0.025em, -1em);
+  opacity: 0.8;
+}
+
+.Ecaps .glitch span:last-child {
+  -webkit-animation: glitch 900ms infinite;
+          animation: glitch 900ms infinite;
+  -webkit-clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+  -webkit-transform: translate(0.0125em, 0.65em);
+          transform: translate(0.0125em, 0.65em);
+  opacity: 0.8;
+}
+
+.Ecaps .glitch {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #efefef;
+  font-family: "Libre Barcode 128 Text", cursive;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+  -webkit-animation: glitch 300ms infinite;
+          animation: glitch 300ms infinite;
+}
+
+.Ecaps .glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Ecaps .glitch span:first-child {
+  -webkit-animation: glitch 600ms infinite;
+          animation: glitch 600ms infinite;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+  -webkit-transform: translate(-0.025em, -1em);
+          transform: translate(-0.025em, -1em);
+  opacity: 0.8;
+}
+
+.Ecaps .glitch span:last-child {
+  -webkit-animation: glitch 900ms infinite;
+          animation: glitch 900ms infinite;
+  -webkit-clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+  -webkit-transform: translate(0.0125em, 0.65em);
+          transform: translate(0.0125em, 0.65em);
+  opacity: 0.8;
+}
+
+@-webkit-keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.2em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.2em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em 0.05em 0.5 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 1 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.2em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.2em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em 0.05em 0.5 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 1 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Ecaps *,
+  .Ecaps ::before,
+  .Ecaps ::after {
+    -webkit-animation-delay: -1ms !important;
+            animation-delay: -1ms !important;
+    -webkit-animation-duration: 1ms !important;
+            animation-duration: 1ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    -webkit-transition-duration: 0s !important;
+            transition-duration: 0s !important;
+    -webkit-transition-delay: 0s !important;
+            transition-delay: 0s !important;
+  }
+}
+
 .Ecaps .Grouping_Ecaps {
   background: url(../static/Backgrounds/Space.webp) no-repeat center center fixed;
   background-size: cover;
@@ -182,7 +323,7 @@ body ::selection {
   line-height: 125%;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
-  margin-bottom: -1vh;
+  margin-bottom: -2.5vh;
 }
 
 .Space .Social {
@@ -193,6 +334,8 @@ body ::selection {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-transform: translateY(calc(0.45vh + 0.45vw));
+          transform: translateY(calc(0.45vh + 0.45vw));
 }
 
 .Space .Social .arrange {
@@ -208,6 +351,122 @@ body ::selection {
 .Space .Social .arrange .bi {
   color: #0e0e0e;
   opacity: 70%;
+}
+
+.Space .glitch_social {
+  font-size: 1.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Libre Barcode 128 Text", cursive;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+  -webkit-animation: glitch 300ms infinite;
+          animation: glitch 300ms infinite;
+}
+
+.Space .glitch_social span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Space .glitch span:first-child {
+  -webkit-animation: glitch 600ms infinite;
+          animation: glitch 600ms infinite;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+  -webkit-transform: translate(-0.025em, -1em);
+          transform: translate(-0.025em, -1em);
+  opacity: 0.8;
+}
+
+.Space .glitch span:last-child {
+  -webkit-animation: glitch 900ms infinite;
+          animation: glitch 900ms infinite;
+  -webkit-clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+  -webkit-transform: translate(0.0125em, 0.65em);
+          transform: translate(0.0125em, 0.65em);
+  opacity: 0.8;
+}
+
+.Space .glitch {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0e0e0e;
+  font-family: "Libre Barcode 128 Text", cursive;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+  -webkit-animation: glitch 300ms infinite;
+          animation: glitch 300ms infinite;
+}
+
+.Space .glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Space .glitch span:first-child {
+  -webkit-animation: glitch 600ms infinite;
+          animation: glitch 600ms infinite;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+  -webkit-transform: translate(-0.025em, -1em);
+          transform: translate(-0.025em, -1em);
+  opacity: 0.8;
+}
+
+.Space .glitch span:last-child {
+  -webkit-animation: glitch 900ms infinite;
+          animation: glitch 900ms infinite;
+  -webkit-clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+  -webkit-transform: translate(0.0125em, 0.65em);
+          transform: translate(0.0125em, 0.65em);
+  opacity: 0.8;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.2em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.2em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em 0.05em 0.5 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 1 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Space *,
+  .Space ::before,
+  .Space ::after {
+    -webkit-animation-delay: -1ms !important;
+            animation-delay: -1ms !important;
+    -webkit-animation-duration: 1ms !important;
+            animation-duration: 1ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    -webkit-transition-duration: 0s !important;
+            transition-duration: 0s !important;
+    -webkit-transition-delay: 0s !important;
+            transition-delay: 0s !important;
+  }
 }
 
 .Space .Grouping_Space {
@@ -315,6 +574,10 @@ body ::selection {
 }
 
 .mobile .Ecaps_Astronaut {
+  display: none;
+}
+
+.mobile .Earth_Astronaut {
   display: none;
 }
 
@@ -491,6 +754,24 @@ body ::selection {
     margin: 70% auto;
     opacity: 70%;
   }
+  body .mobile .earth {
+    padding: 35% auto;
+    height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .mobile .earth .Earth {
+    display: block;
+    width: 70vw;
+    opacity: 70%;
+  }
   body .mobile .page_last {
     height: 100vh;
   }
@@ -547,6 +828,137 @@ body ::selection {
     color: #efefef;
     font-size: calc(1.25vh + 1.25vw);
     line-height: 150%;
+  }
+  body .mobile .glitch_social {
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #efefef;
+    font-family: "Libre Barcode 128 Text", cursive;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+    -webkit-animation: glitch 300ms infinite;
+            animation: glitch 300ms infinite;
+  }
+  body .mobile .glitch_social span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  body .mobile .glitch span:first-child {
+    -webkit-animation: glitch 600ms infinite;
+            animation: glitch 600ms infinite;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+    -webkit-transform: translate(-0.025em, -1em);
+            transform: translate(-0.025em, -1em);
+    opacity: 0.8;
+  }
+  body .mobile .glitch span:last-child {
+    -webkit-animation: glitch 900ms infinite;
+            animation: glitch 900ms infinite;
+    -webkit-clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+            clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+    -webkit-transform: translate(0.0125em, 0.65em);
+            transform: translate(0.0125em, 0.65em);
+    opacity: 0.8;
+  }
+  body .mobile .glitch {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #efefef;
+    font-family: "Libre Barcode 128 Text", cursive;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+    -webkit-animation: glitch 300ms infinite;
+            animation: glitch 300ms infinite;
+  }
+  body .mobile .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  body .mobile .glitch span:first-child {
+    -webkit-animation: glitch 600ms infinite;
+            animation: glitch 600ms infinite;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+    -webkit-transform: translate(-0.025em, -1em);
+            transform: translate(-0.025em, -1em);
+    opacity: 0.8;
+  }
+  body .mobile .glitch span:last-child {
+    -webkit-animation: glitch 900ms infinite;
+            animation: glitch 900ms infinite;
+    -webkit-clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+            clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+    -webkit-transform: translate(0.0125em, 0.65em);
+            transform: translate(0.0125em, 0.65em);
+    opacity: 0.8;
+  }
+  @-webkit-keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.2em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    14% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.2em 0 rgba(0, 0, 255, 0.75);
+    }
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    49% {
+      text-shadow: -0.05em 0.05em 0.5 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 1 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    99% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+  }
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.2em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    14% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.2em 0 rgba(0, 0, 255, 0.75);
+    }
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    49% {
+      text-shadow: -0.05em 0.05em 0.5 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 1 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    99% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) and (prefers-reduced-motion: reduce) {
+  body .mobile *,
+  body .mobile ::before,
+  body .mobile ::after {
+    -webkit-animation-delay: -1ms !important;
+            animation-delay: -1ms !important;
+    -webkit-animation-duration: 1ms !important;
+            animation-duration: 1ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    -webkit-transition-duration: 0s !important;
+            transition-duration: 0s !important;
+    -webkit-transition-delay: 0s !important;
+            transition-delay: 0s !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

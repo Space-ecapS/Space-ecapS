@@ -34,4 +34,8 @@ if (window.screen.width > 600) {
     tle.fromTo(
         ".Ecaps_Astronaut", { y: 100 }, { duration: 3, y: -100, ease: "power1.inOut" }
     );
+    var tlt = gsap.timeline({ repeat: -1 });
+    tlt.fromTo(
+        ".Earth", { rotate: 0 }, { duration: 12, rotate: 360, ease: "none" }
+    );
 }

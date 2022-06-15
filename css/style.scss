@@ -1,418 +1,53 @@
-// Imported Fonts
-@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
-// HTML Style
-html {
-    scroll-behavior: smooth;
-    // Scroll-bar Design (PC ONLY)
-     ::-webkit-scrollbar {
-        background-color: #0e0e0e;
-        width: 0.25em;
-        margin: 1em;
-    }
-     ::-webkit-scrollbar-track {
-        background: transparent;
-    }
-     ::-webkit-scrollbar-thumb {
-        background: #efefef;
-        border-radius: 0.25em;
-    }
-     ::-webkit-scrollbar-thumb:hover {
-        background: rgb(139, 139, 139);
-    }
-}
-
-// Body Style
-body {
-    margin: 0;
-    padding: 0;
-    background: url(../static/Backgrounds/PC.webp) no-repeat center center fixed;
-    background-size: cover;
-    overflow-x: hidden;
-     ::selection {
-        background-color: rgb(110, 110, 110);
-    }
-}
-
-// Ecaps Style
-.Ecaps {
-    position: inherit;
-    width: 50%;
-    left: 0;
-    top: 0;
-    .Social {
-        position: absolute;
-        width: 50%;
-        transform: translateY(-2.1vh);
-        display: flex;
-        margin-top: 0;
-        justify-content: center;
-        .arrange {
-            width: 25%;
-            display: flex;
-            justify-content: space-evenly;
-            .bi {
-                color: #efefef;
-                opacity: 70%;
+        // Imported Fonts
+        @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
+        // HTML Style
+        html {
+            scroll-behavior: smooth;
+            // Scroll-bar Design (PC ONLY)
+             ::-webkit-scrollbar {
+                background-color: #0e0e0e;
+                width: 0.25em;
+                margin: 1em;
+            }
+             ::-webkit-scrollbar-track {
+                background: transparent;
+            }
+             ::-webkit-scrollbar-thumb {
+                background: #efefef;
+                border-radius: 0.25em;
+            }
+             ::-webkit-scrollbar-thumb:hover {
+                background: rgb(139, 139, 139);
             }
         }
-    }
-    .Copy_right {
-        width: 100%;
-        border: 1px solid transparent;
-        font-family: "Libre Barcode 128 Text", cursive;
-        opacity: 65%;
-        text-align: center;
-        color: #efefef;
-        letter-spacing: 0.15em;
-        line-height: 125%;
-    }
-    .Grouping_Ecaps {
-        background: url(../static/Backgrounds/Space.webp) no-repeat center center fixed;
-        background-size: cover;
-        color: #efefef;
-        font-size: calc(0.85vh + 0.85vw);
-        .Basic_setup {
-            width: 100%;
-            background-color: transparent;
-            font-family: "Libre Barcode 128 Text", cursive;
-            opacity: 65%;
-            h1 {
-                width: 100px;
-                position: relative;
-                display: block;
-                margin: 0 auto;
-                text-align: center;
-                top: 50%;
-            }
-            .Ecaps_text {
-                width: 75%;
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-            .Ecaps_context {
-                opacity: 1;
-                width: 75%;
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-            .letter_spacing {
-                letter-spacing: 0.15em;
-                line-height: 125%;
-            }
-            .Ecaps_moon {
-                height: 100vh;
-                width: 99.75%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .Ecaps_Astronaut {
-                    width: 25vw;
-                    vertical-align: middle;
-                }
-            }
-            .Ecaps_earth {
-                height: 100vh;
-                width: 99.75%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .Earth {
-                    width: 25vw;
-                    vertical-align: middle;
-                }
+        
+        // Body Style
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(../static/Backgrounds/PC.webp) no-repeat center center fixed;
+            background-size: cover;
+            overflow-x: hidden;
+             ::selection {
+                background-color: rgb(110, 110, 110);
             }
         }
-    }
-}
-
-// Space Style
-.Space {
-    position: fixed;
-    bottom: 0;
-    margin-left: 50%;
-    width: 50%;
-    .Copy_right {
-        width: 100%;
-        border: 1px solid transparent;
-        font-family: "Libre Barcode 128 Text", cursive;
-        opacity: 65%;
-        text-align: center;
-        color: #0e0e0e;
-        letter-spacing: 0.15em;
-        line-height: 125%;
-        transform: rotate(-180deg);
-        margin-bottom: -1vh;
-    }
-    .Social {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        .arrange {
-            width: 25%;
-            display: flex;
-            justify-content: space-evenly;
-            .bi {
-                color: #0e0e0e;
-                opacity: 70%;
-            }
-        }
-    }
-    .Grouping_Space {
-        background: url(../static/Backgrounds/Ecaps.webp) no-repeat center center fixed;
-        background-size: cover;
-        color: #222222;
-        .Basic_setup {
-            width: 100%;
-            background-color: transparent;
-            font-family: "Libre Barcode 128 Text", cursive;
-            font-size: calc(0.85vh + 0.85vw);
-            transform: rotate(180deg);
-            opacity: 70%;
-            h1 {
-                width: 100px;
-                position: relative;
-                display: block;
-                margin: 0 auto;
-                text-align: center;
-                top: 50%;
-            }
-            .Space_text {
-                width: 75%;
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-            .Space_context {
-                width: 75%;
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-            .letter_spacing {
-                letter-spacing: 0.15em;
-                line-height: 125%;
-            }
-            .Space_moon {
-                height: 100vh;
-                width: 99.75%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .Space_Astronaut {
-                    width: 25vw;
-                    vertical-align: middle;
-                }
-            }
-        }
-        .Basic_setup_custom {
-            width: 100%;
-            background-color: transparent;
-            font-family: "Libre Barcode 128 Text", cursive;
-            font-size: calc(0.85vh + 0.85vw);
-            opacity: 70%;
-            .Space_htrae {
-                height: 100vh;
-                width: 99.75%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .Htrae {
-                    width: 25vw;
-                    vertical-align: middle;
-                }
-            }
-        }
-    }
-}
-
-.mobile {
-    display: none;
-    .letter_spacing {
-        display: none;
-    }
-    .Social {
-        display: none;
-    }
-    .Copy_right {
-        display: none;
-    }
-    .Ecaps_Astronaut {
-        display: none;
-    }
-}
-
-// Empty Space Style
-.Empty_Space {
-    background: transparent;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-// Mobile Style
-@media screen and (max-width: 1000px) {
-    body {
-        background: url(../static/Backgrounds/mobile-bg.webp) no-repeat center center fixed;
-        background-size: cover;
-        font-family: "Libre Barcode 128 Text", cursive;
-        color: white;
-        margin: 0;
-        padding: 0;
-        .Space {
-            display: none;
-            bottom: 0px;
-            width: 0%;
-            height: 0%;
-        }
+        
+        // Ecaps Style
         .Ecaps {
-            display: none;
-            width: 0%;
-            height: 0%;
-        }
-        .Empty_Space {
-            display: none;
-            width: 0%;
-            height: 0%;
-        }
-        .mobile {
-            display: block;
-            height: fit-content;
-            flex-direction: column;
-            position: absolute;
-            * {
-                opacity: 1;
-            }
-            .letter_spacing {
-                letter-spacing: 0.15em;
-                line-height: 125%;
-                display: block;
-            }
-            .blank_page {
-                height: 100vh;
-            }
-            .page_1 {
-                padding: 35% 0%;
-                .m_title {
-                    font-size: calc(2.5vh + 2.5vw);
-                    text-align: center;
-                    width: 95%;
-                    height: min-content;
-                    margin: 25% auto;
-                    opacity: 70%;
-                }
-                .m_heading {
-                    font-size: calc(6vh + 6vw);
-                }
-            }
-            .moon {
-                padding: 35% auto;
-                height: 70vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .Ecaps_Astronaut {
-                    display: block;
-                    width: 75vw;
-                    opacity: 75%;
-                }
-            }
-            .page_2 {
-                padding: 35% auto;
-                height: 70vh;
-                .m_intro {
-                    font-size: calc(2.5vh + 2.5vw);
-                    text-align: center;
-                    width: 95%;
-                    height: min-content;
-                    margin: 70% auto;
-                    opacity: 70%;
-                }
-            }
-            .page_3 {
-                padding: 35% auto;
-                height: 70vh;
-                .m_intro {
-                    font-size: calc(2.5vh + 2.5vw);
-                    text-align: center;
-                    width: 95%;
-                    height: min-content;
-                    margin: 70% auto;
-                    opacity: 70%;
-                }
-            }
-            .page_4 {
-                padding: 70% auto;
-                height: 70vh;
-                .m_intro {
-                    font-size: calc(2.5vh + 2.5vw);
-                    text-align: center;
-                    width: 95%;
-                    height: min-content;
-                    margin: 70% auto;
-                    opacity: 70%;
-                }
-            }
-            .page_5 {
-                padding: 35% auto;
-                height: 70vh;
-                .m_intro {
-                    font-size: calc(2.5vh + 2.5vw);
-                    text-align: center;
-                    width: 95%;
-                    height: min-content;
-                    margin: 70% auto;
-                    opacity: 70%;
-                }
-            }
-            .page_6 {
-                padding: 35% auto;
-                height: 70vh;
-                .m_intro {
-                    font-size: calc(2.5vh + 2.5vw);
-                    text-align: center;
-                    width: 95%;
-                    height: min-content;
-                    margin: 70% auto;
-                    opacity: 70%;
-                }
-            }
-            .page_7 {
-                padding: 35% auto;
-                height: 70vh;
-                .m_intro {
-                    font-size: calc(2.5vh + 2.5vw);
-                    text-align: center;
-                    width: 95%;
-                    height: min-content;
-                    margin: 70% auto;
-                    opacity: 70%;
-                }
-            }
-            .page_last {
-                height: 100vh;
-                .error {
-                    font-size: calc(6vh + 6vw);
-                    text-align: center;
-                    width: 100%;
-                    height: min-content;
-                    color: rgb(255, 175, 175);
-                    margin-top: 65%;
-                    opacity: 70%;
-                }
-                .enter_p {
-                    font-size: calc(2.75vh + 2.75vw);
-                    text-align: center;
-                    width: 95%;
-                    height: min-content;
-                    margin: 20% auto;
-                    opacity: 70%;
-                }
-            }
+            position: inherit;
+            width: 50%;
+            left: 0;
+            top: 0;
             .Social {
-                width: 100.5%;
+                position: absolute;
+                width: 50%;
+                transform: translateY(-2.1vh);
                 display: flex;
+                margin-top: 0;
                 justify-content: center;
                 .arrange {
-                    width: 50%;
+                    width: 25%;
                     display: flex;
                     justify-content: space-evenly;
                     .bi {
@@ -423,15 +58,671 @@ body {
             }
             .Copy_right {
                 width: 100%;
-                display: block;
                 border: 1px solid transparent;
                 font-family: "Libre Barcode 128 Text", cursive;
                 opacity: 65%;
                 text-align: center;
                 color: #efefef;
-                font-size: calc(1.25vh + 1.25vw);
-                line-height: 150%;
+                letter-spacing: 0.15em;
+                line-height: 125%;
+            }
+            .glitch_social {
+                font-size: 1.25em;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #efefef;
+                // opacity: 70%;
+                font-family: "Libre Barcode 128 Text", cursive;
+                text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+                animation: glitch 300ms infinite;
+            }
+            .glitch_social span {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .glitch span:first-child {
+                animation: glitch 600ms infinite;
+                clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+                transform: translate(-0.025em, -1em);
+                opacity: 0.8;
+            }
+            .glitch span:last-child {
+                animation: glitch 900ms infinite;
+                clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+                transform: translate(0.0125em, 0.65em);
+                // color: red;
+                opacity: 0.8;
+            }
+            .glitch {
+                font-size: 2em;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #efefef;
+                // opacity: 70%;
+                font-family: "Libre Barcode 128 Text", cursive;
+                text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+                animation: glitch 300ms infinite;
+            }
+            .glitch span {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .glitch span:first-child {
+                animation: glitch 600ms infinite;
+                clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+                transform: translate(-0.025em, -1em);
+                opacity: 0.8;
+            }
+            .glitch span:last-child {
+                animation: glitch 900ms infinite;
+                clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+                transform: translate(0.0125em, 0.65em);
+                // color: red;
+                opacity: 0.8;
+            }
+            @keyframes glitch {
+                0% {
+                    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.2em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+                14% {
+                    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.2em 0 rgba(0, 0, 255, 0.75);
+                }
+                15% {
+                    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+                49% {
+                    text-shadow: -0.05em 0.05em .5 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+                50% {
+                    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 1 -0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+                99% {
+                    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+                100% {
+                    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+            }
+            @media (prefers-reduced-motion: reduce) {
+                *,
+                 ::before,
+                 ::after {
+                    animation-delay: -1ms !important;
+                    animation-duration: 1ms !important;
+                    animation-iteration-count: 1 !important;
+                    background-attachment: initial !important;
+                    scroll-behavior: auto !important;
+                    transition-duration: 0s !important;
+                    transition-delay: 0s !important;
+                }
+            }
+            .Grouping_Ecaps {
+                background: url(../static/Backgrounds/Space.webp) no-repeat center center fixed;
+                background-size: cover;
+                color: #efefef;
+                font-size: calc(0.85vh + 0.85vw);
+                .Basic_setup {
+                    width: 100%;
+                    background-color: transparent;
+                    font-family: "Libre Barcode 128 Text", cursive;
+                    opacity: 65%;
+                    h1 {
+                        width: 100px;
+                        position: relative;
+                        display: block;
+                        margin: 0 auto;
+                        text-align: center;
+                        top: 50%;
+                    }
+                    .Ecaps_text {
+                        width: 75%;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                    .Ecaps_context {
+                        opacity: 1;
+                        width: 75%;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                    .letter_spacing {
+                        letter-spacing: 0.15em;
+                        line-height: 125%;
+                    }
+                    .Ecaps_moon {
+                        height: 100vh;
+                        width: 99.75%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .Ecaps_Astronaut {
+                            width: 25vw;
+                            vertical-align: middle;
+                        }
+                    }
+                    .Ecaps_earth {
+                        height: 100vh;
+                        width: 99.75%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .Earth {
+                            width: 25vw;
+                            vertical-align: middle;
+                        }
+                    }
+                }
             }
         }
-    }
-}
+        
+        // Space Style
+        .Space {
+            position: fixed;
+            bottom: 0;
+            margin-left: 50%;
+            width: 50%;
+            .Copy_right {
+                width: 100%;
+                border: 1px solid transparent;
+                font-family: "Libre Barcode 128 Text", cursive;
+                opacity: 65%;
+                text-align: center;
+                color: #0e0e0e;
+                letter-spacing: 0.15em;
+                line-height: 125%;
+                transform: rotate(-180deg);
+                margin-bottom: -2.5vh;
+            }
+            .Social {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                transform: translateY(calc(0.45vh + 0.45vw));
+                .arrange {
+                    width: 25%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    .bi {
+                        color: #0e0e0e;
+                        opacity: 70%;
+                    }
+                }
+            }
+            .glitch_social {
+                font-size: 1.25em;
+                font-weight: 700;
+                text-transform: uppercase;
+                // opacity: 70%;
+                font-family: "Libre Barcode 128 Text", cursive;
+                text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+                animation: glitch 300ms infinite;
+            }
+            .glitch_social span {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .glitch span:first-child {
+                animation: glitch 600ms infinite;
+                clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+                transform: translate(-0.025em, -1em);
+                opacity: 0.8;
+            }
+            .glitch span:last-child {
+                animation: glitch 900ms infinite;
+                clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+                transform: translate(0.0125em, 0.65em);
+                // color: red;
+                opacity: 0.8;
+            }
+            .glitch {
+                font-size: 2em;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #0e0e0e;
+                // opacity: 70%;
+                font-family: "Libre Barcode 128 Text", cursive;
+                text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+                animation: glitch 300ms infinite;
+            }
+            .glitch span {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .glitch span:first-child {
+                animation: glitch 600ms infinite;
+                clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+                transform: translate(-0.025em, -1em);
+                opacity: 0.8;
+            }
+            .glitch span:last-child {
+                animation: glitch 900ms infinite;
+                clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+                transform: translate(0.0125em, 0.65em);
+                // color: red;
+                opacity: 0.8;
+            }
+            @keyframes glitch {
+                0% {
+                    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.2em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+                14% {
+                    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.2em 0 rgba(0, 0, 255, 0.75);
+                }
+                15% {
+                    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+                49% {
+                    text-shadow: -0.05em 0.05em .5 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+                50% {
+                    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 1 -0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+                99% {
+                    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+                100% {
+                    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+                }
+            }
+            @media (prefers-reduced-motion: reduce) {
+                *,
+                 ::before,
+                 ::after {
+                    animation-delay: -1ms !important;
+                    animation-duration: 1ms !important;
+                    animation-iteration-count: 1 !important;
+                    background-attachment: initial !important;
+                    scroll-behavior: auto !important;
+                    transition-duration: 0s !important;
+                    transition-delay: 0s !important;
+                }
+            }
+            .Grouping_Space {
+                background: url(../static/Backgrounds/Ecaps.webp) no-repeat center center fixed;
+                background-size: cover;
+                color: #222222;
+                .Basic_setup {
+                    width: 100%;
+                    background-color: transparent;
+                    font-family: "Libre Barcode 128 Text", cursive;
+                    font-size: calc(0.85vh + 0.85vw);
+                    transform: rotate(180deg);
+                    opacity: 70%;
+                    h1 {
+                        width: 100px;
+                        position: relative;
+                        display: block;
+                        margin: 0 auto;
+                        text-align: center;
+                        top: 50%;
+                    }
+                    .Space_text {
+                        width: 75%;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                    .Space_context {
+                        width: 75%;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                    .letter_spacing {
+                        letter-spacing: 0.15em;
+                        line-height: 125%;
+                    }
+                    .Space_moon {
+                        height: 100vh;
+                        width: 99.75%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .Space_Astronaut {
+                            width: 25vw;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .Basic_setup_custom {
+                    width: 100%;
+                    background-color: transparent;
+                    font-family: "Libre Barcode 128 Text", cursive;
+                    font-size: calc(0.85vh + 0.85vw);
+                    opacity: 70%;
+                    .Space_htrae {
+                        height: 100vh;
+                        width: 99.75%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .Htrae {
+                            width: 25vw;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .mobile {
+            display: none;
+            .letter_spacing {
+                display: none;
+            }
+            .Social {
+                display: none;
+            }
+            .Copy_right {
+                display: none;
+            }
+            .Ecaps_Astronaut {
+                display: none;
+            }
+            .Earth_Astronaut {
+                display: none;
+            }
+        }
+        
+        // Empty Space Style
+        .Empty_Space {
+            background: transparent;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        // Mobile Style
+        @media screen and (max-width: 1000px) {
+            body {
+                background: url(../static/Backgrounds/mobile-bg.webp) no-repeat center center fixed;
+                background-size: cover;
+                font-family: "Libre Barcode 128 Text", cursive;
+                color: white;
+                margin: 0;
+                padding: 0;
+                .Space {
+                    display: none;
+                    bottom: 0px;
+                    width: 0%;
+                    height: 0%;
+                }
+                .Ecaps {
+                    display: none;
+                    width: 0%;
+                    height: 0%;
+                }
+                .Empty_Space {
+                    display: none;
+                    width: 0%;
+                    height: 0%;
+                }
+                .mobile {
+                    display: block;
+                    height: fit-content;
+                    flex-direction: column;
+                    position: absolute;
+                    * {
+                        opacity: 1;
+                    }
+                    .letter_spacing {
+                        letter-spacing: 0.15em;
+                        line-height: 125%;
+                        display: block;
+                    }
+                    .blank_page {
+                        height: 100vh;
+                    }
+                    .page_1 {
+                        padding: 35% 0%;
+                        .m_title {
+                            font-size: calc(2.5vh + 2.5vw);
+                            text-align: center;
+                            width: 95%;
+                            height: min-content;
+                            margin: 25% auto;
+                            opacity: 70%;
+                        }
+                        .m_heading {
+                            font-size: calc(6vh + 6vw);
+                        }
+                    }
+                    .moon {
+                        padding: 35% auto;
+                        height: 70vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .Ecaps_Astronaut {
+                            display: block;
+                            width: 75vw;
+                            opacity: 75%;
+                        }
+                    }
+                    .page_2 {
+                        padding: 35% auto;
+                        height: 70vh;
+                        .m_intro {
+                            font-size: calc(2.5vh + 2.5vw);
+                            text-align: center;
+                            width: 95%;
+                            height: min-content;
+                            margin: 70% auto;
+                            opacity: 70%;
+                        }
+                    }
+                    .page_3 {
+                        padding: 35% auto;
+                        height: 70vh;
+                        .m_intro {
+                            font-size: calc(2.5vh + 2.5vw);
+                            text-align: center;
+                            width: 95%;
+                            height: min-content;
+                            margin: 70% auto;
+                            opacity: 70%;
+                        }
+                    }
+                    .page_4 {
+                        padding: 70% auto;
+                        height: 70vh;
+                        .m_intro {
+                            font-size: calc(2.5vh + 2.5vw);
+                            text-align: center;
+                            width: 95%;
+                            height: min-content;
+                            margin: 70% auto;
+                            opacity: 70%;
+                        }
+                    }
+                    .page_5 {
+                        padding: 35% auto;
+                        height: 70vh;
+                        .m_intro {
+                            font-size: calc(2.5vh + 2.5vw);
+                            text-align: center;
+                            width: 95%;
+                            height: min-content;
+                            margin: 70% auto;
+                            opacity: 70%;
+                        }
+                    }
+                    .page_6 {
+                        padding: 35% auto;
+                        height: 70vh;
+                        .m_intro {
+                            font-size: calc(2.5vh + 2.5vw);
+                            text-align: center;
+                            width: 95%;
+                            height: min-content;
+                            margin: 70% auto;
+                            opacity: 70%;
+                        }
+                    }
+                    .page_7 {
+                        padding: 35% auto;
+                        height: 70vh;
+                        .m_intro {
+                            font-size: calc(2.5vh + 2.5vw);
+                            text-align: center;
+                            width: 95%;
+                            height: min-content;
+                            margin: 70% auto;
+                            opacity: 70%;
+                        }
+                    }
+                    .earth {
+                        padding: 35% auto;
+                        height: 70vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .Earth {
+                            display: block;
+                            width: 70vw;
+                            opacity: 70%;
+                        }
+                    }
+                    .page_last {
+                        height: 100vh;
+                        .error {
+                            font-size: calc(6vh + 6vw);
+                            text-align: center;
+                            width: 100%;
+                            height: min-content;
+                            color: rgb(255, 175, 175);
+                            margin-top: 65%;
+                            opacity: 70%;
+                        }
+                        .enter_p {
+                            font-size: calc(2.75vh + 2.75vw);
+                            text-align: center;
+                            width: 95%;
+                            height: min-content;
+                            margin: 20% auto;
+                            opacity: 70%;
+                        }
+                    }
+                    .Social {
+                        width: 100.5%;
+                        display: flex;
+                        justify-content: center;
+                        .arrange {
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-evenly;
+                            .bi {
+                                color: #efefef;
+                                opacity: 70%;
+                            }
+                        }
+                    }
+                    .Copy_right {
+                        width: 100%;
+                        display: block;
+                        border: 1px solid transparent;
+                        font-family: "Libre Barcode 128 Text", cursive;
+                        opacity: 65%;
+                        text-align: center;
+                        color: #efefef;
+                        font-size: calc(1.25vh + 1.25vw);
+                        line-height: 150%;
+                    }
+                    .glitch_social {
+                        font-size: 1em;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #efefef;
+                        // opacity: 70%;
+                        font-family: "Libre Barcode 128 Text", cursive;
+                        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+                        animation: glitch 300ms infinite;
+                    }
+                    .glitch_social span {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    .glitch span:first-child {
+                        animation: glitch 600ms infinite;
+                        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+                        transform: translate(-0.025em, -1em);
+                        opacity: 0.8;
+                    }
+                    .glitch span:last-child {
+                        animation: glitch 900ms infinite;
+                        clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+                        transform: translate(0.0125em, 0.65em);
+                        // color: red;
+                        opacity: 0.8;
+                    }
+                    .glitch {
+                        font-size: 1.5em;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #efefef;
+                        // opacity: 70%;
+                        font-family: "Libre Barcode 128 Text", cursive;
+                        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.5), -0.025em -0.05em 0 rgba(0, 255, 0, 0.5), 0.025em 0.05em 0 rgba(0, 0, 255, 0.5);
+                        animation: glitch 300ms infinite;
+                    }
+                    .glitch span {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    .glitch span:first-child {
+                        animation: glitch 600ms infinite;
+                        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 50%);
+                        transform: translate(-0.025em, -1em);
+                        opacity: 0.8;
+                    }
+                    .glitch span:last-child {
+                        animation: glitch 900ms infinite;
+                        clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);
+                        transform: translate(0.0125em, 0.65em);
+                        // color: red;
+                        opacity: 0.8;
+                    }
+                    @keyframes glitch {
+                        0% {
+                            text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.2em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+                        }
+                        14% {
+                            text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.2em 0 rgba(0, 0, 255, 0.75);
+                        }
+                        15% {
+                            text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+                        }
+                        49% {
+                            text-shadow: -0.05em 0.05em .5 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+                        }
+                        50% {
+                            text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 1 -0.05em 0 rgba(0, 0, 255, 0.75);
+                        }
+                        99% {
+                            text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+                        }
+                        100% {
+                            text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+                        }
+                    }
+                    @media (prefers-reduced-motion: reduce) {
+                        *,
+                         ::before,
+                         ::after {
+                            animation-delay: -1ms !important;
+                            animation-duration: 1ms !important;
+                            animation-iteration-count: 1 !important;
+                            background-attachment: initial !important;
+                            scroll-behavior: auto !important;
+                            transition-duration: 0s !important;
+                            transition-delay: 0s !important;
+                        }
+                    }
+                }
+            }
+        }
