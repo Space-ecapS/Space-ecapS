@@ -14,11 +14,19 @@ if (window.screen.width > 600) {
     // Using gsap to animate the moons
     var tle = gsap.timeline({ repeat: -1, yoyo: true });
     var tls = gsap.timeline({ repeat: -1, yoyo: true });
+    var tlt = gsap.timeline({ repeat: -1 });
+    var tl = gsap.timeline({ repeat: -1 });
     tle.fromTo(
         ".Ecaps_Astronaut", { y: 50 }, { duration: 2.5, y: -100, ease: "power1.inOut" }
     );
     tls.fromTo(
         ".Space_Astronaut", { y: 50 }, { duration: 2.5, y: -100, ease: "power1.inOut" }
+    );
+    tlt.fromTo(
+        ".Earth", { rotate: 0 }, { duration: 12, rotate: 360, ease: "none" }
+    );
+    tl.fromTo(
+        ".Htrae", { rotate: 0 }, { duration: 12, rotate: -360, ease: "none" }
     );
 } else {
     // Using gsap to animate the moon

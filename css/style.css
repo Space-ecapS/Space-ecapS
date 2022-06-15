@@ -145,6 +145,25 @@ body ::selection {
   vertical-align: middle;
 }
 
+.Ecaps .Grouping_Ecaps .Basic_setup .Ecaps_earth {
+  height: 100vh;
+  width: 99.75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Ecaps .Grouping_Ecaps .Basic_setup .Ecaps_earth .Earth {
+  width: 25vw;
+  vertical-align: middle;
+}
+
 .Space {
   position: fixed;
   bottom: 0;
@@ -248,6 +267,33 @@ body ::selection {
 }
 
 .Space .Grouping_Space .Basic_setup .Space_moon .Space_Astronaut {
+  width: 25vw;
+  vertical-align: middle;
+}
+
+.Space .Grouping_Space .Basic_setup_custom {
+  width: 100%;
+  background-color: transparent;
+  font-family: "Libre Barcode 128 Text", cursive;
+  font-size: calc(0.85vh + 0.85vw);
+  opacity: 70%;
+}
+
+.Space .Grouping_Space .Basic_setup_custom .Space_htrae {
+  height: 100vh;
+  width: 99.75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Space .Grouping_Space .Basic_setup_custom .Space_htrae .Htrae {
   width: 25vw;
   vertical-align: middle;
 }
