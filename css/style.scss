@@ -199,6 +199,12 @@ body {
     .letter_spacing {
         display: none;
     }
+    .Social {
+        display: none;
+    }
+    .Copy_right {
+        display: none;
+    }
     .Ecaps_Astronaut {
         display: none;
     }
@@ -388,6 +394,7 @@ body {
             }
             .Copy_right {
                 width: 100%;
+                display: block;
                 border: 1px solid transparent;
                 font-family: "Libre Barcode 128 Text", cursive;
                 opacity: 65%;

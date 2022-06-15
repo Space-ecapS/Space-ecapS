@@ -260,6 +260,14 @@ body ::selection {
   display: none;
 }
 
+.mobile .Social {
+  display: none;
+}
+
+.mobile .Copy_right {
+  display: none;
+}
+
 .mobile .Ecaps_Astronaut {
   display: none;
 }
@@ -485,6 +493,7 @@ body ::selection {
   }
   body .mobile .Copy_right {
     width: 100%;
+    display: block;
     border: 1px solid transparent;
     font-family: "Libre Barcode 128 Text", cursive;
     opacity: 65%;
