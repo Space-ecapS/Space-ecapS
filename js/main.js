@@ -22,6 +22,7 @@ if (window.screen.width > 600) {
     tls.fromTo(
         ".Space_Astronaut", { y: 50 }, { duration: 2.5, y: -100, ease: "power1.inOut" }
     );
+    // Using gsap to animate the earths
     tlt.fromTo(
         ".Earth", { rotate: 0 }, { duration: 12, rotate: 360, ease: "none" }
     );
