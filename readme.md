@@ -5,4 +5,3 @@
 > This portfolio is licensed under [MIT](./LICENSE).
 
 > Author - [@parth25sareen](https://github.com/parth25sareen)
-
